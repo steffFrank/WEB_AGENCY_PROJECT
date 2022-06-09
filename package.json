@@ -1,0 +1,19 @@
+{
+  "name": "web_agency_project",
+  "version": "1.0.0",
+  "description": "This project is about cutting and integrating a model of a web designer.",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./css/style.css --style-extended"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/steffFrank/WEB_AGENCY_PROJECT.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/steffFrank/WEB_AGENCY_PROJECT/issues"
+  },
+  "homepage": "https://github.com/steffFrank/WEB_AGENCY_PROJECT#readme"
+}
