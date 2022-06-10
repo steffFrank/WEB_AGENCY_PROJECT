@@ -1,0 +1,31 @@
+// MIXINS
+
+// Mixin To Add a Background Image
+@mixin img-replace($img, $width, $height, $display: "block") {
+    background-image: url("#{path--rel}/#{$img}");
+    background-repeat: no-repeat;
+    width: $width;
+    height: $height;
+    display: $display;
+}
+
+//Mixin To Easily Add an element
+@mixin e($element) {
+    &__#{$element} {
+        @content;
+    }
+}
+
+// Mixin to easily add a modifier
+@mixin m($modifier) {
+    &--#{$modifier} {
+        @content;
+    }
+}
+
+//Mixin to add a breakpoint
+@mixin breakpoint($device) {
+    @media screen and (min-width: map-get($breakpoints, $device)) {
+        @content;
+    }
+}

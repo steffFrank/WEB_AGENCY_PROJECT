@@ -1,0 +1,50 @@
+// All The Variables
+
+$font-url--google: "https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap";
+
+$font-family--primary: "Roboto" sans-serif;
+$font-family--secondary: "Roboto" sans-serif;
+
+// Front Weigths
+$font-weight--thin: 100;
+$font-weight--light: 300;
+$font-weight--regular: 400;
+$font-weight--medium: 500;
+$font-weight--bold: 700;
+$font-weight--black: 900;
+
+// Descriptive Base Colors
+
+$blue: #5CADD3;
+$white: #FFF;
+$black: #0B0B0B;
+$grey: #6E6E6E;
+$grey-1: #F5F5F5;
+$grey-2: #E5E5E5;
+// Color Usage
+
+$color-primary: $white;
+$color-secondary: $black;
+$color-accent: $blue;
+$color-text: $grey;
+$bg-color__project: $grey-1; 
+$bg-color__nav: $grey-2;
+$color-transparence: rgba($black, 0.4);
+
+// Breakpoints For Responsive Design
+
+$breakpoints: (
+    mobile: 576px,
+    tablet: 768px,
+    laptop: 992px,
+    desktop:1200px,
+);
+
+// Text
+
+$base__font-size: 16px;
+$base__font-line: 24px;
+
+// Path to assets/images
+
+$path--rel: "../assets";
