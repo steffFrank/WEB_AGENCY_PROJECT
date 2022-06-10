@@ -18,12 +18,12 @@ h1, h2 {
 }
 h1 {
     color: $white;
-    font-size: rem(12px);
+    font-size: rem(24px);
     font-weight: $font-weight--bold;
 }
 
 h2 {
-    font-size: rem(10px);
+    font-size: rem(22px);
     color: $black;
     font-weight: $font-weight--black;
 }
@@ -34,11 +34,11 @@ h3, h4 {
 }
 
 h3 {
-    font-size: rem(8px);
+    font-size: rem(18px);
     color: $black;
 }
 
 h4 {
-    font-size: rem(7px);
+    font-size: rem(14px);
     color: $white;
 }
