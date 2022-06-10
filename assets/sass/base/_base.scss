@@ -1,0 +1,44 @@
+//=================================
+// Basic page configuration
+//=================================
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: $base__font-size;
+    font-family: $font-family--primary;
+    color: $color-text;
+}
+h1, h2 {
+    text-transform: uppercase;
+}
+h1 {
+    color: $white;
+    font-size: rem(12px);
+    font-weight: $font-weight--bold;
+}
+
+h2 {
+    font-size: rem(10px);
+    color: $black;
+    font-weight: $font-weight--black;
+}
+
+h3, h4 {
+    text-transform: capitalize;
+    font-weight: $font-weight--medium;
+}
+
+h3 {
+    font-size: rem(8px);
+    color: $black;
+}
+
+h4 {
+    font-size: rem(7px);
+    color: $white;
+}
