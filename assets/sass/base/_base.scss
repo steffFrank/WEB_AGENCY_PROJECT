@@ -43,6 +43,7 @@ h4 {
     color: $white;
 }
 
-a {
+a, a:visited, a:active {
     text-decoration: none;
+    color: $color-secondary;
 }
