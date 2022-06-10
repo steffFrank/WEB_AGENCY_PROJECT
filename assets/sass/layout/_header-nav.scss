@@ -1,0 +1,25 @@
+//================================
+// HEADER NAVIGATION
+//================================
+
+.header-nav {
+    display: none;
+    @include breakpoint(laptop) {
+        display: block;
+        margin-left: 150px;
+        width: 30vw;
+        margin-right: auto;
+        ul {
+            display: flex;
+            justify-content: space-between;
+        }
+        @include e(link) {
+            text-transform: capitalize;
+            padding-top: 20px;
+            border-top: 2px solid transparent;
+            &:hover {
+                border-top-color: $color-accent;
+            }
+        }
+    }
+}
