@@ -5,7 +5,7 @@
 
 
 // Import fonts if google fonts url is defined
-@if variable-exits($name: "font-url--goolge") {
+@if variable-exists($name: "font-url--goolge") {
     @import url($font-url--google);
 }
 
