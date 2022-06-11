@@ -1,0 +1,32 @@
+//=====================================
+// SERVICES RULES
+//====================================
+
+.services {
+    height: 100vh;
+    @include e(heading) {
+        // margin-bottom: $margin-sep;
+    }
+    @include e(description) {
+        text-align: center;
+        span {
+            color: $color-accent;
+        }
+    }
+    @include e(main) {
+        text-align: center;
+        img {
+            display: block;
+            margin: auto;
+        }
+    }
+}
+
+.service {
+    @include e(ux) {
+        margin-bottom: $margin-sep;
+    }
+    @include e(ui) {
+        margin-bottom: $margin-sep;
+    }
+}
