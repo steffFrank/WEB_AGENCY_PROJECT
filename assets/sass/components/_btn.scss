@@ -1,0 +1,16 @@
+//==================================
+// BUTTON RULES
+//==================================
+
+.btn {
+    height: 25px;
+    background-color: $color-accent;
+    border: none;
+    color: $color-primary;
+    cursor: pointer;
+    transition: all $animation-duration;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-accent;
+    }
+}
