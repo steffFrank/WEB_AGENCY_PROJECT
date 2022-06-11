@@ -3,13 +3,44 @@
 //================================
 
 .header-nav {
-    display: none;
+    visibility: hidden;
+    @include m(active) {
+        visibility:visible;
+        position: absolute;
+        width: 40%;
+        height: 40vh;
+        top: 0;
+        right: -110px;
+        border-radius: 50% 0 0 50%;
+        background-color: $color-text;
+        transform: translateX(-110px);
+        transition: transform $animation-duration ease-in-out;
+        z-index: -10;
+    }
+    ul {
+        position: absolute;
+        top:25%;
+        right: 25%; 
+    }
+    a {
+        color: $color-primary;
+        &:hover {
+            color: $color-accent;
+        }
+    }
+    @include e(link) {
+        margin-bottom: rem(15px);
+        text-transform: uppercase;
+    }
     @include breakpoint(laptop) {
-        display: block;
+        visibility: visible;
         margin-left: 150px;
         width: 30vw;
         margin-right: auto;
         ul {
+            position: relative;
+            top: 0;
+            right: 0;
             display: flex;
             justify-content: space-between;
         }
@@ -19,6 +50,7 @@
             border-top: 3px solid transparent;
             transition: all 0.8s;
             a {
+                color: $color-secondary;
                 transition: color 0.4s;
                 &:hover {
                     color: $color-accent;

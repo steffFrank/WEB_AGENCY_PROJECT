@@ -4,6 +4,7 @@
 
 let menu = document.querySelector(".menu");
 let bars = document.querySelectorAll(".menu__bar");
+let nav = document.querySelector(".header-nav");
 let toggle = false;
 
 menu.addEventListener("click", () => {
@@ -11,9 +12,11 @@ menu.addEventListener("click", () => {
     bars.forEach(bar => bar.classList.remove("menu__bar--no-animation"));
     if (!toggle) {
         bars.forEach(bar => bar.classList.add("menu__bar--active"));
+        nav.classList.add("header-nav--active");
         toggle=true;
     } else {
         bars.forEach(bar => bar.classList.remove("menu__bar--active"));
+        nav.classList.remove("header-nav--active");
         toggle=false;
     }
 })
