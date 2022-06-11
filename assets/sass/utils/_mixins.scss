@@ -29,3 +29,8 @@
         @content;
     }
 }
+
+// Mixin for the animation
+@mixin btn-animation($name) {
+    animation: $name $animation-duration ease-in-out forwards;
+}

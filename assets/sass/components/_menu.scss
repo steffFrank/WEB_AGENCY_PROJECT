@@ -1,21 +1,46 @@
 //==================================
 // HAMBUGER MENU
 //==================================
-
 .menu {
     width: 40px;
     height: 25px;
     margin: auto;
     cursor: pointer;
+    &:hover {
+        .menu__bar {
+            box-shadow: 1px 1px 2px $color-accent;
+        }
+    }
     @include e(bar) {
         height: 5px;
         background-color: $color-accent;
         border-radius: $btn--border-radius;
         &:first-child {
-            margin-bottom: 5px;
+            position: relative;
+            bottom: 5px;
+            @include btn-animation(first-bar--rev);
+        }
+        &:nth-child(2) {
+            @include btn-animation(second-bar--rev);
         }
         &:last-child {
-            margin-top: 5px;
+            position: relative;
+            top: 5px;
+            @include btn-animation(third-bar--rev);
+        }
+        @include m(active) {
+            &:first-child {
+                @include btn-animation(first-bar);
+            }
+            &:nth-child(2) {
+                @include btn-animation(second-bar);
+            }
+            &:last-child {
+                @include btn-animation(third-bar);
+            }
+        }
+        @include m(no-animation) {
+            animation: none !important;
         }
     }
     @include breakpoint(laptop) {

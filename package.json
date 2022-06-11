@@ -4,7 +4,7 @@
   "description": "This project is about cutting and integrating a model of a web designer.",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./assets/sass/_main.scss ./assets/css/style.css --style=compressed"
+    "sass": "sass --watch ./assets/sass/_main.scss ./assets/css/style.css --style=expanded"
   },
   "repository": {
     "type": "git",

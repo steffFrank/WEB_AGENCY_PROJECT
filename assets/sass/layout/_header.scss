@@ -1,0 +1,19 @@
+//=====================================
+// HEADER RULES
+//=====================================
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    background-color: $color-primary;
+    height: 8vh;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    @include e(logo) {
+        width: 200px;
+        height: 43px;
+        margin: auto;
+    }  
+}
+
