@@ -7,15 +7,45 @@
     @include e(img) {
         display: block;
         width: 100%;
-        height: 300px;
+    }
+    @include e(arrow-left) {
+        position: absolute;
+        width:50px;
+        height: 50px;
+        background-color: $color-transparence;
+        top:35%;
+        left: -20px;
+        border-radius: 0 50% 50% 0;
+        cursor: pointer;
+        i {
+            position: relative;
+            top:  25%;
+            left: 55%;
+            color: $color-primary;
+        }
+    }
+    @include e(arrow-right) {
+        position: absolute;
+        width:50px;
+        height: 50px;
+        background-color: $color-transparence;
+        top:35%;
+        right: -20px;
+        border-radius: 50% 0 0 50%;
+        cursor: pointer;
+        i {
+            position: relative;
+            top:  25%;
+            right: -25%;
+            color: $color-primary;
+        }
     }
 }
 
 .slider-description {
     position:relative;
     width: 250px;
-    height: 150px;
-    top:-200px;
+    bottom: 200px;
     left: 10%;
     color: $color-primary;
     @include e(title) {
