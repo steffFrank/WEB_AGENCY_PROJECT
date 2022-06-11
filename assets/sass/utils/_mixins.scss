@@ -1,12 +1,11 @@
 // MIXINS
 
 // Mixin To Add a Background Image
-@mixin img-replace($img, $width, $height, $display: "block") {
+@mixin img-replace($img, $width, $height) {
     background-image: url("#{path--rel}/#{$img}");
     background-repeat: no-repeat;
     width: $width;
     height: $height;
-    display: $display;
 }
 
 //Mixin To Easily Add an element
