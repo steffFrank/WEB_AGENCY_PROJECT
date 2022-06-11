@@ -16,8 +16,15 @@
         @include e(link) {
             text-transform: capitalize;
             padding-top: 20px;
-            border-top: 2px solid transparent;
-            &:hover {
+            border-top: 3px solid transparent;
+            transition: all 0.8s;
+            a {
+                transition: color 0.4s;
+                &:hover {
+                    color: $color-accent;
+                }
+            }
+            &:hover, a:hover {
                 border-top-color: $color-accent;
             }
         }
