@@ -21,12 +21,13 @@
         margin: auto;
         display: grid;
         grid-gap: rem(10px);
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: 1fr;
     }
 }
 
 .projects-item {
-    width: 250px;
-    height: 200px;
+    width: clamp(250px, 80vw, 400px);
+    height: clamp(200px, 400px, 600px);
     background-color: aqua;
+    margin: auto;
 }

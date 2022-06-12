@@ -6,18 +6,24 @@
 @import "./utils/mixins";
 
 //vendors
+// NO VENDORS FOR THIS PROJECT
 //base
 @import "./base/base";
+
 //components
 @import "./components/btn";
 @import "./components/menu";
 @import "./components/separator";
-//layout
 
+//layout
+@import "./layout/form";
 @import "./layout/header";
 @import "./layout/header-nav";
 @import "./layout/main";
+
 //pages
 @import "./pages/services";
 @import "./pages/projects";
+@import "./pages/footer";
 //themes
+//NO THEMES FOR THIS PROJECT
