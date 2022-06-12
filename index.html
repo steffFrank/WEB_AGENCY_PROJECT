@@ -11,152 +11,154 @@
     <title>Web Agency</title>
 </head>
 <body>
-    <!-- HEADER -->
-    <header class="header">
-        <img src="./assets/images/logo.png" alt="page logo"            class="header__logo" />
-        <nav class="header-nav">
-            <ul>
-                <li class="header-nav__link"><a href="#">accueil</a></li>
-                <li class="header-nav__link"><a href="">services</a></li>
-                <li class="header-nav__link"><a href="">portfolio</a></li>
-                <li class="header-nav__link"><a href="">contact</a></li>
-            </ul>
-        </nav>
-        <!-- Hambuger menu for the mobile -->
-        <div class="menu">
-            <div class="menu__bar menu__bar--no-animation"></div>
-            <div class="menu__bar menu__bar--no-animation"></div>
-            <div class="menu__bar menu__bar--no-animation"></div>
-        </div>
-    </header>
-    <main class="slider">
-        <div class="slider__arrow-left"><i class="fa-solid fa-chevron-left"></i></div>
-        <div class="slider__arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
-        <img class="slider__img" src="./assets/images/slider/bg1.jpg" alt="slider"/>
-        <div class="slider-description">
-            <h1 class="slider-description__title"><span>webagency</span>:l'agence de tous vos projets!</h1>
-            <p class="slider-description__subtitle">vous avez un projet web? la WebAgency vous aide a le realiser!</p>
-            <button class="slider-description__btn btn">plus d'infos</button>
-        </div>
-    </main>
-    <section class="services">
-        <h2 class="services__heading">nos services</h2>
-        <div class="separator"></div>
-        <p class="services__description">A la <span>WebAgency</span> nous vous offrons un <span>Design</span> et <span>Référencement</span> de qualité</p>
-        <div class="services__main">
-            <img src="./assets/images/main-feature.png" alt="apple computer" />
-            <div class="service">
-                <article class="service__ux">
-                    <div class="service__ux--logo"></div>
-                    <h3>UX design</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, inventore! Ab fugit cum consequuntur inventore nam asperiores corporis dolorem ullam quo officiis sint, accusantium voluptatum vitae molestias rem sequi. Neque!</p>
-                </article>
-                <article class="service__ui">
-                    <div class="service__logo"></div>
-                    <h3>UI design</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, inventore! Ab fugit cum consequuntur inventore nam asperiores corporis dolorem ullam quo officiis sint, accusantium voluptatum vitae molestias rem sequi. Neque!</p>
-                </article>
-                <article class="service__seo">
-                    <div class="service__logo"></div>
-                    <h3>SEO</h3>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Saepe, inventore! Ab fugit cum consequuntur inventore nam asperiores corporis dolorem ullam quo officiis sint, accusantium voluptatum vitae molestias rem sequi. Neque!</p>
-                </article>
+    <div id="bloc_page">
+        <!-- HEADER -->
+        <header class="header">
+            <img src="./assets/images/logo.png" alt="page logo"            class="header__logo" />
+            <nav class="header-nav">
+                <ul>
+                    <li class="header-nav__link"><a href="./index.html">accueil</a></li>
+                    <li class="header-nav__link"><a href="#services">services</a></li>
+                    <li class="header-nav__link"><a href="#portfolio">portfolio</a></li>
+                    <li class="header-nav__link"><a href="#contact">contact</a></li>
+                </ul>
+            </nav>
+            <!-- Hambuger menu for the mobile -->
+            <div class="menu">
+                <div class="menu__bar menu__bar--no-animation"></div>
+                <div class="menu__bar menu__bar--no-animation"></div>
+                <div class="menu__bar menu__bar--no-animation"></div>
             </div>
-        </div>
-    </section>
+        </header>
+        <main class="slider">
+            <div class="slider__arrow-left"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="slider__arrow-right"><i class="fa-solid fa-chevron-right"></i></div>
+            <img class="slider__img" src="./assets/images/slider/bg1.jpg" alt="slider"/>
+            <div class="slider-description">
+                <h1 class="slider-description__title"><span>webagency</span>:l'agence de tous vos projets!</h1>
+                <p class="slider-description__subtitle">vous avez un projet web? la WebAgency vous aide a le realiser!</p>
+                <button class="slider-description__btn btn">plus d'infos</button>
+            </div>
+        </main>
+        <section class="services" id="services">
+            <h2 class="services__heading">nos services</h2>
+            <div class="separator"></div>
+            <p class="services__description">Nous vous offrons des services <span>diversifiés</span> et <span>variés</span>, tout ce dont vous avez besoin pour la réalisation de vos projets.</p>
+            <div class="services__main">
+                <img src="./assets/images/main-feature.png" alt="apple computer" />
+                <div class="service">
+                    <article class="service__ux">
+                        <div class="service__ux--logo"></div>
+                        <h3>UX design</h3>
+                        <p>Nous vous garantissons une expérience utilisateur cohérente, élégante, intéressante.</p>
+                    </article>
+                    <article class="service__ui">
+                        <div class="service__logo"></div>
+                        <h3>UI design</h3>
+                        <p>Avec une interface fluide et dynamique l'attention de l'utilisateur est capturée dès le premier coup.</p>
+                    </article>
+                    <article class="service__seo">
+                        <div class="service__logo"></div>
+                        <h3>SEO</h3>
+                        <p>Grâce à nos techniques de référencement vous obtiendrez un bon "Ranking" et une augmentation considérable du trafic.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
-    <!-- NOS PROJETS SECTION -->
+        <!-- NOS PROJETS SECTION -->
 
-    <section class="projects">
-        <h2>nos projets</h2>
-        <div class="separator"></div>
-        <p class="projects_description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laboriosam ex, iste, esse totam nemo quaerat doloribus excepturi dolore, error quibusdam! Dolor sed vel veniam autem, voluptatem eum perspiciatis placeat?</p>
-        <nav>
-            <ul>
-                <li><button class="btn">all works</button></li>
-                <li><button class="btn">creative</button></li>
-                <li><button class="btn">corporate</button></li>
-                <li><button class="btn">portfolio</button></li>
-            </ul>
-        </nav>
-        <div class="projects__container">
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 1</h4>
-                    <p>project 1 description</p>
+        <section class="projects" id="portfolio">
+            <h2>nos projets</h2>
+            <div class="separator"></div>
+            <p class="projects__description">Quoi de mieux que des exemples concrets. Découvrez certains de nos meilleurs projets, vous y trouverez peut-être ce que vous cherchez !</p>
+            <nav>
+                <ul>
+                    <li><button class="btn-proj">all works</button></li>
+                    <li><button class="btn-proj">creative</button></li>
+                    <li><button class="btn-proj">corporate</button></li>
+                    <li><button class="btn-proj">portfolio</button></li>
+                </ul>
+            </nav>
+            <div class="projects__container">
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 1</h4>
+                        <p>project 1 description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 2</h4>
-                    <p>project 2 description</p>
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 2</h4>
+                        <p>project 2 description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 3</h4>
-                    <p>project 3 description</p>
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 3</h4>
+                        <p>project 3 description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 4</h4>
-                    <p>project 4 description</p>
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 4</h4>
+                        <p>project 4 description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 5</h4>
-                    <p>project 5 description</p>
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 5</h4>
+                        <p>project 5 description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 6</h4>
-                    <p>project 6 description</p>
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 6</h4>
+                        <p>project 6 description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 7</h4>
-                    <p>project 7 description</p>
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 7</h4>
+                        <p>project 7 description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 8</h4>
-                    <p>project 8 description</p>
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 8</h4>
+                        <p>project 8 description</p>
+                    </div>
                 </div>
-            </div>
-            <div class="projects-item">
-                <div class="projects-item__description">
-                    <h4>item 9</h4>
-                    <p>project 9 description</p>
+                <div class="projects-item">
+                    <div class="projects-item__description">
+                        <h4>item 9</h4>
+                        <p>project 9 description</p>
+                    </div>
                 </div>
+                
             </div>
-            
-        </div>
-    </section>
-    <!-- CONTACT SECTION -->
-    <footer class="contact">
-        <h2 class="contact__heading">contact</h2>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.2215981037166!2d2.349826!3d48.873052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris%2C%20Francia!5e0!3m2!1sit!2sit!4v1654844850291!5m2!1sit!2sit" width="1600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        <form class="contact-form">
-            <div class="contact-form__info">
-                <h3 class="contact-form__heading">contact info</h3>
-                <address class="contact-form__address">
-                    <p>WebAgency SAS</p>
-                    <p>25 rue d'hauteville 75010 paris</p>
-                    <p>tel: 01 02 03 04 05</p>
-                </address>
-            </div>
-            <input id="name" placeholder="name" name="name" type="text" />
-            <input id="email" placeholder="email" name="email" type="email" />
-            <input id="subject" placeholder="subject" name="subject" type="text" />
-            <textarea id="message" placeholder="message" name="message"></textarea>
-            <button type="submit" class=" contact-form__btn btn">send message</button>
-        </form>
-    </footer>
+        </section>
+        <!-- CONTACT SECTION -->
+        <footer class="contact" id="contact">
+            <h2 class="contact__heading">contact</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.2215981037166!2d2.349826!3d48.873052!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e145ccb3091%3A0x9495beee8c96ec27!2s25%20Rue%20d&#39;Hauteville%2C%2075010%20Paris%2C%20Francia!5e0!3m2!1sit!2sit!4v1654844850291!5m2!1sit!2sit" width="1600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <form class="contact-form">
+                <div class="contact-form__info">
+                    <h3 class="contact-form__heading">contact info</h3>
+                    <address class="contact-form__address">
+                        <p>WebAgency SAS</p>
+                        <p>25 rue d'hauteville 75010 paris</p>
+                        <p>tel: 01 02 03 04 05</p>
+                    </address>
+                </div>
+                <input id="name" placeholder="name" name="name" type="text" />
+                <input id="email" placeholder="email" name="email" type="email" />
+                <input id="subject" placeholder="subject" name="subject" type="text" />
+                <textarea id="message" placeholder="message" name="message"></textarea>
+                <button type="submit" class=" contact-form__btn btn">send message</button>
+            </form>
+        </footer>
+    </div>
     <script src="index.js"></script>
 </body>
 </html>
