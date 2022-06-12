@@ -33,3 +33,25 @@
 @mixin btn-animation($name) {
     animation: $name $animation-duration ease-in-out forwards;
 }
+
+// Bottom border
+@mixin btn-border($color) {
+    border-bottom: 3px solid $color;
+}
+
+// Mixin of a button just the colors are changing
+
+@mixin btn($bg-color:$color-accent, $text-color:$color-primary, $color-hover:$color-primary, $txt-color-hover:$color-accent, $color-border:$blue-border) {
+    height: 25px;
+    text-transform: capitalize;
+    background-color: $bg-color;
+    border: none;
+    color: $text-color;
+    cursor: pointer;
+    transition: all $animation-duration;
+    &:hover {
+        background-color: $color-hover;
+        color: $txt-color-hover;
+        @include btn-border($color-border);
+    }
+}

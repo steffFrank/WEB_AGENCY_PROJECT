@@ -3,14 +3,24 @@
 //==================================
 
 .btn {
-    height: 25px;
-    background-color: $color-accent;
-    border: none;
-    color: $color-primary;
-    cursor: pointer;
-    transition: all $animation-duration;
+    @include btn;
+    @include btn-border($blue-border);
     &:hover {
-        background-color: $color-primary;
-        color: $color-accent;
+        @include btn-border($color-primary);
+    }
+}
+
+.btn-proj {
+    position: relative;
+    @include btn($bg-color__nav, $color-secondary, $color-accent, $color-primary);
+    @include btn-border($bg-color__nav);
+    &:hover:before {
+        content: "";
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-top: 5px solid $blue-border;
+        position: relative;
+        top:130%;
+        left: 45%;
     }
 }

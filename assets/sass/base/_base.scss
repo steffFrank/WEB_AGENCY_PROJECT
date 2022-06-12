@@ -8,16 +8,15 @@
     box-sizing: border-box;
 }
 #bloc_page {
-    width: 90vw;
-    max-width: rem(1440px);
+    width: clamp(rem(256px), 95vw, rem(1440px));
+    // width: 90vw;
+    // max-width: rem(1440px);
     margin: 0 auto;
-}
-
-body {
     font-size: $base__font-size;
     font-family: $font-family--primary;
     color: $color-text;
 }
+
 h1, h2 {
     text-transform: uppercase;
     text-align: center;

@@ -1,0 +1,32 @@
+//=======================================
+// PROJECTS RULES
+//======================================
+
+
+.projects {
+    @include e(description) {
+        text-align: center;
+        width: 60%;
+        margin: auto;
+        margin-bottom: rem(20px);
+    }
+    ul {
+        display: flex;
+        margin: auto;
+        width: fit-content;
+        margin-bottom: rem(60px);
+    }
+    @include e(container) {
+        width: 80vw;
+        margin: auto;
+        display: grid;
+        grid-gap: rem(10px);
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.projects-item {
+    width: 250px;
+    height: 200px;
+    background-color: aqua;
+}
