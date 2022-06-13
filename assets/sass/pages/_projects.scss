@@ -45,6 +45,11 @@
     max-width: 450px;
     height: 300px ;
     margin: auto;
+    &:hover {
+        .projects-item__description {
+            animation: description--rev $animation-duration ease-in-out forwards;
+        }
+    }
     @include breakpoint(laptop) {
         height: 180px;
     }
@@ -86,7 +91,7 @@
         bottom: 0;
         background-color: $color-transparence;
         color: $color-primary;
-        
+        animation: description $animation-duration ease-in-out forwards;
         h4 {
             position: absolute;
             top:0;
