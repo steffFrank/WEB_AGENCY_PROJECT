@@ -86,5 +86,18 @@
         bottom: 0;
         background-color: $color-transparence;
         color: $color-primary;
+        
+        h4 {
+            position: absolute;
+            top:0;
+        }
+        p {
+            position: absolute;
+            top:30%;
+            &:first-letter {
+                text-transform: capitalize;
+            }
+        }
+        
     }
 }

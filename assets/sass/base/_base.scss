@@ -50,12 +50,14 @@ h3, h4 {
 
 h3 {
     font-size: rem(18px);
-    color: $black;
+    color: $color-secondary;
 }
 
 h4 {
-    font-size: rem(14px);
-    color: $white;
+    font-size: rem(16px);
+    color: $color-primary;
+    font-family: "Roboto", serif;
+    font-weight: $font-weight--black;
 }
 
 a, a:visited, a:active {
