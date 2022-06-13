@@ -3,30 +3,60 @@
 //====================================
 
 .services {
-    height: 100vh;
-    @include e(heading) {
-        // margin-bottom: $margin-sep;
+    // height: 0vh;
+    width: 80vw;
+    margin: calc($margin-sep * 10) auto;
+    @include breakpoint(tablet) {
+        width: 100%;
     }
     @include e(description) {
+        width: 70vw;
+        margin: auto;
         text-align: center;
+        margin-bottom: calc($margin-sep * 10);
         span {
             color: $color-accent;
         }
     }
     @include e(main) {
-        text-align: center;
+        @include breakpoint(tablet) {
+            display: grid;
+            grid-template-columns: 1.25fr 1.75fr;
+            column-gap: $margin-sep;
+        }
         img {
             display: block;
+            width: 100%;
             margin: auto;
+            margin-bottom: calc($margin-sep * 3);
+            @include breakpoint(tablet) {
+                all: unset;
+                width: 400px;
+                position: relative;
+                bottom: 15%;
+            }
+            @include breakpoint(laptop) {
+                width: 100%;
+                bottom: 20%;
+            }
         }
     }
 }
 
 .service {
-    @include e(ux) {
-        margin-bottom: $margin-sep;
+    @include e(wrapper) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: calc($margin-sep * 3);
     }
-    @include e(ui) {
-        margin-bottom: $margin-sep;
+    @include e(text) {
+        width: 70%;
+        margin-left: 20px;
+    }
+    i {
+        position: relative;
+        left: 18px;
+        bottom: 37px;
+        color: $color-accent;
     }
 }

@@ -66,3 +66,13 @@
     top:40%;
     z-index: 20;
 }
+
+// Mixin for the dot circle
+
+@mixin dot($position) {
+    position: $position;
+    width: 10px;
+    height: 10px;
+    background-color: $color-accent;
+    border-radius: 50%;
+}
