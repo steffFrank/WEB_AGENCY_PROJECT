@@ -9,28 +9,26 @@
 }
 #bloc_page {
     width: clamp(rem(256px), 95vw, rem(1440px));
-    // width: 90vw;
-    // max-width: rem(1440px);
     margin: 0 auto;
     font-size: $base__font-size;
-    font-family: $font-family--primary;
+    font-family: $font-family--secondary;
     color: $color-text;
 }
 
 h1, h2 {
     text-transform: uppercase;
     text-align: center;
+    font-family: $font-family--primary;
+    font-weight: $font-weight--black;
 }
 h1 {
     color: $white;
     font-size: rem(24px);
-    font-weight: $font-weight--black;
 }
 
 h2 {
     font-size: rem(22px);
     color: $black;
-    font-weight: $font-weight--black;
 }
 
 h3, h4 {
