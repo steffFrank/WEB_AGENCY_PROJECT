@@ -7,12 +7,15 @@
     width: 40%;
     height: 40vh;
     top: 0;
-    right: -500px;
+    right: 0;
     border-radius: 50% 0 0 50%;
     background-color: rgba($color-text, 0.9);
-    transition: $animation-duration ease-in-out;
+    transform: scale(1, 0);
+    transition: all $animation-duration ease-in-out;
+
     @include m(active) {
-        transform: translateX(-500px);
+        // transform: translateX(-500px);
+        transform: scale(1);
         transition: all $animation-duration ease-in-out;
         z-index: -10;
     }
@@ -48,15 +51,12 @@
             padding-top: 20px;
             border-top: 3px solid transparent;
             transition: all 0.8s;
-            a {
-                color: $color-secondary;
-                transition: color 0.4s;
-                &:hover {
-                    color: $color-accent;
-                }
-            }
-            &:hover, a:hover {
+            &:hover {
                 border-top-color: $color-accent;
+            }
+            a {
+                color: $color-text;
+                transition: color 0.4s;
             }
         }
     }
