@@ -3,7 +3,6 @@
 //====================================
 
 .services {
-    // height: 0vh;
     width: 80vw;
     margin: calc($margin-sep * 10) auto;
     @include breakpoint(tablet) {

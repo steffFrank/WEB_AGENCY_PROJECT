@@ -4,11 +4,15 @@
 
 
 .projects {
+    background-color: $bg-color__project;
+    padding: $margin-sep;
+    margin-bottom: calc($margin-sep * 10);
     @include e(description) {
         text-align: center;
         width: 60%;
         margin: auto;
-        margin-bottom: rem(20px);
+        margin-bottom: calc($margin-sep * 2);
+       
     }
     ul {
         display: flex;
@@ -17,17 +21,59 @@
         margin-bottom: rem(60px);
     }
     @include e(container) {
-        width: 80vw;
-        margin: auto;
         display: grid;
-        grid-gap: rem(10px);
+        gap: $margin-sep;
         grid-template-columns: 1fr;
+        justify-items: start;
+        align-items: center;
+        @include breakpoint(tablet) {
+            grid-template-columns: 1fr 1fr;
+        }
+        @include breakpoint(laptop) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+        @include breakpoint(desktop) {
+            grid-template-columns: repeat(4, 1fr);
+        }
     }
 }
 
 .projects-item {
-    width: clamp(250px, 80vw, 400px);
-    height: clamp(200px, 400px, 600px);
-    background-color: aqua;
+    width: 100%;
+    max-width: 450px;
+    height: 300px ;
     margin: auto;
+    @include breakpoint(laptop) {
+        height: 180px;
+    }
+    @include breakpoint(desktop) {
+        height: 200px;
+    }
+    &:first-child {
+        background: url("../images/portfolio/01.jpg") no-repeat center;
+    }
+    &:nth-child(2) {
+        background: url("../images/portfolio/02.jpg") no-repeat center;
+    }
+    &:nth-child(3) {
+        background: url("../images/portfolio/03.jpg") no-repeat center;
+    }
+    &:nth-child(4) {
+        background: url("../images/portfolio/04.jpg") no-repeat center;
+    }
+    &:nth-child(5) {
+        background: url("../images/portfolio/05.jpg") no-repeat center;
+    }
+    &:nth-child(6) {
+        background: url("../images/portfolio/06.jpg") no-repeat center;
+    }
+    &:nth-child(7) {
+        background: url("../images/portfolio/07.jpg") no-repeat center;
+    }
+    &:nth-child(8) {
+        background: url("../images/portfolio/08.jpg") no-repeat center;
+    }
+    &:nth-child(9) {
+        background: url("../images/portfolio/full.jpg") no-repeat center;
+    }
 }
