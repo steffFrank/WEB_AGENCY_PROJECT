@@ -22,7 +22,8 @@
     }
     @include e(container) {
         display: grid;
-        gap: $margin-sep;
+        gap: calc($margin-sep * 2);
+        padding: calc($margin-sep * 2);
         grid-template-columns: 1fr;
         justify-items: start;
         align-items: center;
