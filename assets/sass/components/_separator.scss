@@ -3,11 +3,7 @@
 //===================================
 
 .separator {
-    position: relative;
-    width: 10px;
-    height: 10px;
-    background-color: $color-accent;
-    border-radius: 50%;
+    @include dot(relative);
     margin: $margin-sep auto;
     &::after {
         content: "";
