@@ -11,7 +11,7 @@
     border: 1px solid $color-transparence;
     &:after {
         content: "";
-        @include dot(absolute);
+        @include dot;
         top: 25px;
         left: 92%;
     }
