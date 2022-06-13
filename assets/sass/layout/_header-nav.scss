@@ -3,18 +3,17 @@
 //================================
 
 .header-nav {
-    visibility: hidden;
+    position: absolute;
+    width: 40%;
+    height: 40vh;
+    top: 0;
+    right: -300px;
+    border-radius: 50% 0 0 50%;
+    background-color: rgba($color-text, 0.9);
+    transition: $animation-duration ease-in-out;
     @include m(active) {
-        visibility:visible;
-        position: absolute;
-        width: 40%;
-        height: 40vh;
-        top: 0;
-        right: -110px;
-        border-radius: 50% 0 0 50%;
-        background-color: $color-text;
-        transform: translateX(-110px);
-        transition: transform $animation-duration ease-in-out;
+        transform: translateX(-300px);
+        transition: all $animation-duration ease-in-out;
         z-index: -10;
     }
     ul {

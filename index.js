@@ -3,7 +3,7 @@
 //Animation of the button
 
 let menu = document.querySelector(".menu");
-let bars = document.querySelectorAll(".menu__bar");
+let bars = document.querySelectorAll(".menu__bar--no-animation");
 let nav = document.querySelector(".header-nav");
 let toggle = false;
 
