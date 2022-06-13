@@ -7,12 +7,12 @@
     width: 40%;
     height: 40vh;
     top: 0;
-    right: -300px;
+    right: -500px;
     border-radius: 50% 0 0 50%;
     background-color: rgba($color-text, 0.9);
     transition: $animation-duration ease-in-out;
     @include m(active) {
-        transform: translateX(-300px);
+        transform: translateX(-500px);
         transition: all $animation-duration ease-in-out;
         z-index: -10;
     }
@@ -32,7 +32,7 @@
         text-transform: uppercase;
     }
     @include breakpoint(laptop) {
-        visibility: visible;
+        all: unset;
         margin-left: 150px;
         width: 30vw;
         margin-right: auto;
