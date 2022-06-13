@@ -23,12 +23,24 @@ h1, h2 {
 }
 h1 {
     color: $white;
-    font-size: rem(24px);
+    font-size: rem(18px);
+    @include breakpoint(laptop) {
+        font-size: rem(22px);
+    }
+    @include breakpoint(desktop) {
+        font-size: rem(28px);
+    }
 }
 
 h2 {
-    font-size: rem(22px);
+    font-size: rem(16px);
     color: $black;
+    @include breakpoint(laptop) {
+        font-size: rem(20px);
+    }
+    @include breakpoint(desktop) {
+        font-size: rem(24px);
+    }
 }
 
 h3, h4 {
@@ -49,4 +61,9 @@ h4 {
 a, a:visited, a:active {
     text-decoration: none;
     color: $color-secondary;
+    font-size: rem(14px);
+}
+
+button {
+    font-size: rem(10px);
 }

@@ -48,6 +48,7 @@
     border: none;
     color: $text-color;
     cursor: pointer;
+    font-size: rem(12px);
     transition: all $animation-duration;
     &:hover {
         background-color: $color-hover;
