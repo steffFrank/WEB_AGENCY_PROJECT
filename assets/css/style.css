@@ -707,31 +707,31 @@ a, a:visited, a:active {
   }
 }
 .projects-item:first-child {
-  background: url("../images/portfolio/01.jpg") no-repeat center;
+  background: url("../../images/portfolio/01.jpg") no-repeat center;
 }
 .projects-item:nth-child(2) {
-  background: url("../images/portfolio/02.jpg") no-repeat center;
+  background: url("../../images/portfolio/02.jpg") no-repeat center;
 }
 .projects-item:nth-child(3) {
-  background: url("../images/portfolio/03.jpg") no-repeat center;
+  background: url("../../images/portfolio/03.jpg") no-repeat center;
 }
 .projects-item:nth-child(4) {
-  background: url("../images/portfolio/04.jpg") no-repeat center;
+  background: url("../../images/portfolio/04.jpg") no-repeat center;
 }
 .projects-item:nth-child(5) {
-  background: url("../images/portfolio/05.jpg") no-repeat center;
+  background: url("../../images/portfolio/05.jpg") no-repeat center;
 }
 .projects-item:nth-child(6) {
-  background: url("../images/portfolio/06.jpg") no-repeat center;
+  background: url("../../images/portfolio/06.jpg") no-repeat center;
 }
 .projects-item:nth-child(7) {
-  background: url("../images/portfolio/07.jpg") no-repeat center;
+  background: url("../../images/portfolio/07.jpg") no-repeat center;
 }
 .projects-item:nth-child(8) {
-  background: url("../images/portfolio/08.jpg") no-repeat center;
+  background: url("../../images/portfolio/08.jpg") no-repeat center;
 }
 .projects-item:nth-child(9) {
-  background: url("../images/portfolio/full.jpg") no-repeat center;
+  background: url("../../images/portfolio/full.jpg") no-repeat center;
 }
 .projects-item__description {
   width: 100%;
