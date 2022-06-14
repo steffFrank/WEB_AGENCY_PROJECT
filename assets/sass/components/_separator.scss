@@ -3,7 +3,7 @@
 //===================================
 
 .separator {
-    @include dot(relative);
+    @include dot($position:relative);
     margin: $margin-sep auto;
     &::after {
         content: "";
