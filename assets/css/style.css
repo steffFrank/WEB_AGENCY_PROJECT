@@ -759,7 +759,6 @@ a, a:visited, a:active {
 }
 .contact__map {
   background-color: #5CADD3;
-  background-position: relative;
   z-index: -20;
   width: 100%;
   height: 25rem;
