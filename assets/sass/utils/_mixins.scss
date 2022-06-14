@@ -76,3 +76,9 @@
     background-color: $bg;
     border-radius: 50%;
 }
+
+// Focus
+@mixin focus {
+    outline: 2px solid $color-accent;
+    border: none;
+}

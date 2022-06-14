@@ -3,28 +3,56 @@
 //=================================
 
 .contact-form {
-    width: 300px;
-    min-height: 400px;
+    width: rem(280px);
+    height: rem(400px);
     margin: $margin-sep auto;
     background-color: rgba($grey-1, 0.7);
     display: flex;
     flex-direction: column;
     padding: $margin-sep;
     border-radius: $btn--border-radius;
+    @include breakpoint(laptop) {
+        position:absolute;
+        bottom: 6%;
+        right: 5%;
+        z-index: 20;
+        background: rgba($color-primary, 0.8);
+    }
+    @include e(address) {
+        font-size: rem(14px);
+    }
     input {
-        margin: $margin-sep 0;
+        margin: calc(2 * $margin-sep/3) 0;
         height: 30px;
+        border: none;
+        outline: 1px solid $grey-2;
+        border-radius: rem(2px);
+        transition: outline 0.5s;
         &::placeholder {
             text-transform: capitalize;
+            padding: calc($margin-sep);
+        }
+        &:focus {
+            @include focus;
         }
     }
     textarea {
         margin: $margin-sep 0;
         height: 200px;
-        text-transform: capitalize;
+        border: none;
+        border-radius: rem(2px);
+        transition: outline ease-in-out 0.5s;
+        &::placeholder {
+            text-transform: capitalize;
+            padding: calc($margin-sep/2);
+        }
+        &:focus {
+            @include focus;
+        }
     }
     @include e(btn) {
         width: 40%;
+        height: rem(30px);
         &:hover {
             background-color: $color-secondary;
             color: $color-primary;

@@ -3,12 +3,18 @@
 //================================
 
 .contact {
+    position: relative;
     @include e(map) {
         background-color: $color-accent;
         background-position: relative;
         z-index: -20;
         width: 100%;
-        height: 400px;
+        height: rem(400px);
+        @include breakpoint(laptop) {
+            margin:calc($margin-sep * 5) auto;
+            height: rem(500px);
+            
+        }
         iframe {
             position: relative;
             width: 100%;
