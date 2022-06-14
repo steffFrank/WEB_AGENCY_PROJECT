@@ -41,7 +41,7 @@
     color: $text-color;
     cursor: pointer;
     font-size: rem(12px);
-    transition: all $animation-duration;
+    transition: all $animation-duration ease-in-out;
     &:hover {
         background-color: $color-hover;
         color: $txt-color-hover;
