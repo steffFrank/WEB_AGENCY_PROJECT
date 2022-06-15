@@ -173,7 +173,7 @@ a, a:visited, a:active {
   color: #FFF;
   cursor: pointer;
   font-size: 0.75rem;
-  transition: all 0.7s;
+  transition: all 0.7s ease-in-out;
   border-bottom: 3px solid #4494BB;
 }
 .btn:hover {
@@ -194,7 +194,7 @@ a, a:visited, a:active {
   color: #0B0B0B;
   cursor: pointer;
   font-size: 0.75rem;
-  transition: all 0.7s;
+  transition: all 0.7s ease-in-out;
   border-bottom: 3px solid #E5E5E5;
   width: 5rem;
   height: 2.1875rem;

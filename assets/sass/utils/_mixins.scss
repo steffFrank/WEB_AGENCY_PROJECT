@@ -60,7 +60,6 @@
 }
 
 // Mixin for the dot circle
-
 @mixin dot($width:10px, $height:10px, $bg:$color-accent, $position:absolute) {
     position: $position;
     width: $width;
