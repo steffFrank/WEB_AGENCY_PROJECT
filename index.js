@@ -31,3 +31,18 @@ links.forEach(link => {
         }
     })
 })
+
+
+// PROJECTS
+
+const projects = document.querySelectorAll(".projects-item");
+
+const selectProjects = (project) => {
+    projects.forEach(item => {
+        if (!item.classList.contains(project)) {
+            item.style.display = "none";
+        } else {
+            item.style.display = "block";
+        }
+    })
+}

@@ -693,7 +693,7 @@ a, a:visited, a:active {
   height: 300px;
   margin: auto;
 }
-.projects-item:hover .projects-item__description {
+.projects-item:hover > .projects-item__description {
   animation: description--rev 0.7s ease-in-out forwards;
 }
 @media screen and (min-width: 992px) {
@@ -752,6 +752,10 @@ a, a:visited, a:active {
 }
 .projects-item__description p:first-letter {
   text-transform: capitalize;
+}
+
+.projects-item__no-ani {
+  animation: none !important;
 }
 
 .contact {

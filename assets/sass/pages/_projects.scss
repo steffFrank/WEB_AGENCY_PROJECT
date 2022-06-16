@@ -45,10 +45,8 @@
     max-width: 450px;
     height: 300px ;
     margin: auto;
-    &:hover {
-        .projects-item__description {
-            animation: description--rev $animation-duration ease-in-out forwards;
-        }
+    &:hover > .projects-item__description {
+        animation: description--rev $animation-duration ease-in-out forwards;
     }
     @include breakpoint(laptop) {
         height: 180px;
@@ -105,4 +103,8 @@
         }
         
     }
+}
+
+.projects-item__no-ani {
+    animation: none !important;
 }

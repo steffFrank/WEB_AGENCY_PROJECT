@@ -14,7 +14,6 @@
     transition: all $animation-duration ease-in-out;
 
     @include m(active) {
-        // transform: translateX(-500px);
         transform: scale(1);
         transition: all $animation-duration ease-in-out;
         z-index: -10;
