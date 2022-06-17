@@ -34,15 +34,24 @@ links.forEach(link => {
 
 
 // PROJECTS
-
 const projects = document.querySelectorAll(".projects-item");
+const projButtons = document.querySelectorAll(".btn-proj");
 
-const selectProjects = (project) => {
+// Function to select different category of project
+const selectProjects = (category) => {
+    let selectedButton;
+    projButtons.forEach(button => {
+        button.classList.remove("btn-proj--selected");
+        if (button.innerHTML.toLowerCase() === category.toLowerCase()) {
+            selectedButton = button;
+        }
+    })
+    selectedButton.classList.add("btn-proj--selected");
     projects.forEach(item => {
-        if (!item.classList.contains(project)) {
-            item.style.display = "none";
-        } else {
+        if (item.classList.contains(category) || category === "all works") {
             item.style.display = "block";
+        } else {
+            item.style.display = "none";
         }
     })
 }

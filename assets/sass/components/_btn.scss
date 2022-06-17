@@ -3,7 +3,7 @@
 //==================================
 
 .btn {
-    @include btn;
+    @include btn();
     @include btn-border($blue-border);
     &:hover {
         @include btn-border($color-primary);
@@ -18,13 +18,21 @@
     height: rem(35px);
     color: $color-text;
     font-weight: $font-weight--bold;
-    &:hover:before {
-        content: "";
-        border-left: 7px solid transparent;
-        border-right: 7px solid transparent;
-        border-top: 7px solid $blue-border;
-        position: absolute;
-        top:105%;
-        left: 45%;
+    
+    @include m(selected) {
+        @include btn();
+        width: rem(80px);
+        height: rem(35px);
+        font-weight: $font-weight--bold;
+        @include btn-border($blue-border);
+        &:before {
+            content: "";
+            border-left: 7px solid transparent;
+            border-right: 7px solid transparent;
+            border-top: 7px solid $blue-border;
+            position: absolute;
+            top:105%;
+            left: 45%;
+        }
     }
 }

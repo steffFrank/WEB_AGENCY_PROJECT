@@ -206,7 +206,26 @@ a, a:visited, a:active {
   color: #FFF;
   border-bottom: 3px solid #4494BB;
 }
-.btn-proj:hover:before {
+.btn-proj--selected {
+  height: 25px;
+  text-transform: capitalize;
+  background-color: #5CADD3;
+  border: none;
+  color: #FFF;
+  cursor: pointer;
+  font-size: 0.75rem;
+  transition: all 0.7s ease-in-out;
+  width: 5rem;
+  height: 2.1875rem;
+  font-weight: 700;
+  border-bottom: 3px solid #4494BB;
+}
+.btn-proj--selected:hover {
+  background-color: #FFF;
+  color: #5CADD3;
+  border-bottom: 3px solid #4494BB;
+}
+.btn-proj--selected:before {
   content: "";
   border-left: 7px solid transparent;
   border-right: 7px solid transparent;
