@@ -24,17 +24,12 @@
         display: grid;
         gap: calc($margin-sep * 2);
         padding: calc($margin-sep * 2);
-        grid-template-columns: 1fr;
-        justify-items: start;
-        align-items: center;
-        @include breakpoint(tablet) {
-            grid-template-columns: 1fr 1fr;
-        }
+        grid-template-columns: repeat(auto-fit, minmax(rem(280px), 1fr));
         @include breakpoint(laptop) {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(rem(200px), 1fr));
         }
         @include breakpoint(desktop) {
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(auto-fit, minmax(rem(300px), 1fr));
         }
     }
 }
@@ -42,7 +37,7 @@
 .projects-item {
     position: relative;
     width: 100%;
-    max-width: 450px;
+    max-width: 400px;
     height: 300px ;
     margin: auto;
     &:hover > .projects-item__description {
