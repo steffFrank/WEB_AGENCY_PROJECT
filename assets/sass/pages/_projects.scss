@@ -12,7 +12,6 @@
         width: 60%;
         margin: auto;
         margin-bottom: calc($margin-sep * 2);
-       
     }
     ul {
         display: flex;
@@ -41,7 +40,8 @@
     height: 300px ;
     margin: auto;
     &:hover > .projects-item__description {
-        animation: description--rev $animation-duration ease-in-out forwards;
+        opacity: 1;
+        transform: translateY(0);
     }
     @include breakpoint(laptop) {
         height: 180px;
@@ -84,7 +84,9 @@
         bottom: 0;
         background-color: $color-transparence;
         color: $color-primary;
-        animation: description $animation-duration ease-in-out forwards;
+        opacity: 0;
+        transform: translateY(-50px);
+        transition: all $animation-duration ease-in-out;
         h4 {
             position: absolute;
             top:0;
@@ -100,6 +102,3 @@
     }
 }
 
-.projects-item__no-ani {
-    animation: none !important;
-}
