@@ -4,9 +4,11 @@
 
 
 .projects {
+    position: relative;
     background-color: $bg-color__project;
     padding: $margin-sep;
     margin-bottom: calc($margin-sep * 10);
+    z-index: -12; // To make the separator line visible
     @include e(description) {
         text-align: center;
         width: 60%;
@@ -37,7 +39,7 @@
     position: relative;
     width: 100%;
     max-width: 400px;
-    height: 300px ;
+    height: 300px;
     margin: auto;
     &:hover > .projects-item__description {
         opacity: 1;
