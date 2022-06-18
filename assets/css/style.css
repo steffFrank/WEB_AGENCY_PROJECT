@@ -71,26 +71,6 @@
     transform: scale(1);
   }
 }
-@keyframes description {
-  0% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-  100% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-}
-@keyframes description--rev {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 *,
 *::before,
 *::after {
@@ -173,7 +153,7 @@ a, a:visited, a:active {
   color: #FFF;
   cursor: pointer;
   font-size: 0.75rem;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-bottom: 3px solid #4494BB;
 }
 .btn:hover {
@@ -194,7 +174,7 @@ a, a:visited, a:active {
   color: #0B0B0B;
   cursor: pointer;
   font-size: 0.75rem;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
   border-bottom: 3px solid #E5E5E5;
   width: 5rem;
   height: 2.1875rem;
@@ -214,7 +194,7 @@ a, a:visited, a:active {
   color: #FFF;
   cursor: pointer;
   font-size: 0.75rem;
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
   width: 5rem;
   height: 2.1875rem;
   font-weight: 700;
@@ -253,24 +233,24 @@ a, a:visited, a:active {
 .menu__bar:first-child {
   position: relative;
   bottom: 5px;
-  animation: first-bar--rev 0.7s ease-in-out forwards;
+  animation: first-bar--rev 0.5s ease-in-out forwards;
 }
 .menu__bar:nth-child(2) {
-  animation: second-bar--rev 0.7s ease-in-out forwards;
+  animation: second-bar--rev 0.5s ease-in-out forwards;
 }
 .menu__bar:last-child {
   position: relative;
   top: 5px;
-  animation: third-bar--rev 0.7s ease-in-out forwards;
+  animation: third-bar--rev 0.5s ease-in-out forwards;
 }
 .menu__bar--active:first-child {
-  animation: first-bar 0.7s ease-in-out forwards;
+  animation: first-bar 0.5s ease-in-out forwards;
 }
 .menu__bar--active:nth-child(2) {
-  animation: second-bar 0.7s ease-in-out forwards;
+  animation: second-bar 0.5s ease-in-out forwards;
 }
 .menu__bar--active:last-child {
-  animation: third-bar 0.7s ease-in-out forwards;
+  animation: third-bar 0.5s ease-in-out forwards;
 }
 @media screen and (min-width: 992px) {
   .menu {
@@ -440,11 +420,11 @@ a, a:visited, a:active {
   border-radius: 50% 0 0 50%;
   background-color: rgba(110, 110, 110, 0.9);
   transform: scale(1, 0);
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .header-nav--active {
   transform: scale(1);
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
   z-index: -10;
 }
 .header-nav ul {
@@ -755,7 +735,7 @@ a, a:visited, a:active {
   color: #FFF;
   opacity: 0;
   transform: translateY(-50px);
-  transition: all 0.7s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .projects-item__description h4 {
   position: absolute;

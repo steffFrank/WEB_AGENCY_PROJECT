@@ -96,16 +96,4 @@ $margin-sep: 10px;
     100% {opacity: 1; transform: scale(1)}
 }
 
-
-// Project description animation
-
-@keyframes description {
-    0% {opacity:1; transform: translateY(0);}
-    100% {opacity: 0; transform: translateY(-50px);}
-}
-
-@keyframes description--rev {
-    0% {opacity:0; transform: translateY(-50px);}
-    100% {opacity: 1; transform: translateY(0);}
-}
-$animation-duration: 0.7s;
+$animation-duration: 0.5s;
