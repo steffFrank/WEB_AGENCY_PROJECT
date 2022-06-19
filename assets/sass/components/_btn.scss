@@ -17,7 +17,7 @@
     width: rem(80px);
     height: rem(35px);
     color: $color-text;
-    font-weight: $font-weight--bold;
+    font-weight: bolder;
     
     @include m(selected) {
         @include btn();

@@ -179,7 +179,7 @@ a, a:visited, a:active {
   width: 5rem;
   height: 2.1875rem;
   color: #6E6E6E;
-  font-weight: 700;
+  font-weight: bolder;
 }
 .btn-proj:hover {
   background-color: #5CADD3;
@@ -649,7 +649,6 @@ a, a:visited, a:active {
   background-color: #F5F5F5;
   padding: 10px;
   margin-bottom: 100px;
-  z-index: -12;
 }
 .projects__description {
   text-align: center;

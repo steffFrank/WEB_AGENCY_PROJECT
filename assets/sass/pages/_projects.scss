@@ -8,13 +8,14 @@
     background-color: $bg-color__project;
     padding: $margin-sep;
     margin-bottom: calc($margin-sep * 10);
-    z-index: -12; // To make the separator line visible
+    
     @include e(description) {
         text-align: center;
         width: 60%;
         margin: auto;
         margin-bottom: calc($margin-sep * 2);
     }
+    
     ul {
         display: flex;
         margin: auto;
@@ -96,6 +97,7 @@
         p {
             position: absolute;
             top:30%;
+
             &:first-letter {
                 text-transform: capitalize;
             }
