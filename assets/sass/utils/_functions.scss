@@ -2,13 +2,6 @@
 // Helpers Functions
 //=======================================
 @use "sass:math";
-
-
-// Import fonts if google fonts url is defined
-@if variable-exists($name: "font-url--google") {
-    @import url($font-url--google);
-}
-
 // Function to convert px to rem
 @function rem($value, $context: $base__font-size) {
     @return math.div($value, $context) * 1rem;
