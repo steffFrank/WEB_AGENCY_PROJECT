@@ -43,7 +43,6 @@ const selectProjects = (category) => {
     button.classList.remove("btn-proj--selected");
     if (button.innerHTML.toLowerCase().trim() === category.toLowerCase()) {
       selectedButton = button;
-      break;
     }
   }
   selectedButton.classList.add("btn-proj--selected");
